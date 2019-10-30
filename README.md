@@ -31,15 +31,11 @@ Brute-Force Algorithm
 
 Cheapest-Link Algorithm
   
-The Cheapest-Link Algorithm begins with the edge of least weight and makes it part of the circuit. Then it selects the edge of second-smallest weight, and so on. Once a vertex has two selected edges, no more edges of that vertex are considered and we must avoid creating a circuit prematurely. Eventually the edges will form a circuit. This algorithm is similar to that of Kruskal’s Algorithm, where as in Kruskal’s , a node can any number of links but in Cheapest-Link Algorithm, a node cannot have more than two links.
+    The Cheapest-Link Algorithm begins with the edge of least weight and makes it part of the circuit. Then it selects the edge of second-smallest weight, and so on. Once a vertex has two selected edges, no more edges of that vertex are considered and we must avoid creating a circuit prematurely. Eventually the edges will form a circuit. This algorithm is similar to that of Kruskal’s Algorithm, where as in Kruskal’s , a node can any number of links but in Cheapest-Link Algorithm, a node cannot have more than two links.
  
-  The pseudocode for the Cheapest-Link Algorithm can be described as follows:
-
-Pick an edge with the cheapest weight, in case of a tie, pick whichever pleases you. Colour your edge. 
-
-Pick the next cheapest uncoloured edge unless: 
-your new edge closes a smaller circuit
-your new edge results in three coloured edges coming out of a single vertex. Again if there is a tie break it at your will.
-
-Repeat Step 2 until the Hamilton circuit is complete.
+    The pseudocode for the Cheapest-Link Algorithm can be described as follows:
+    Pick an edge with the cheapest weight, in case of a tie, pick whichever pleases you. Colour your edge. 
+    Pick the next cheapest uncoloured edge unless: your new edge closes a smaller circuit
+    your new edge results in three coloured edges coming out of a single vertex. Again if there is a tie break it at your will.
+    Repeat Step 2 until the Hamilton circuit is complete.
 
